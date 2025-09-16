@@ -1,6 +1,7 @@
 class Dockform < Formula
   desc "Manage Docker Compose projects declaratively"
   homepage "https://dockform.io"
+  version "0.2.1"
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/gcstr/dockform/releases/download/v0.2.1/dockform_v0.2.1_darwin_arm64.tar.gz"
