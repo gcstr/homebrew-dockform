@@ -5,7 +5,7 @@ This repository contains the Homebrew formula for [Dockform](https://dockform.io
 ## Installation
 
 ```bash
-brew tap dockform/tap
+brew tap gcstr/dockform
 brew install dockform
 ```
 
