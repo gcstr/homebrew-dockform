@@ -5,21 +5,21 @@
 class Dockform < Formula
   desc "Manage Docker Compose projects declaratively"
   homepage "https://dockform.io"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gcstr/dockform/releases/download/v0.6.0/dockform_v0.6.0_darwin_amd64.tar.gz"
-      sha256 "b0c0dfb9c743bd2dd0f80e6ee0fc193d4feb17f22dd63a95fee3162499064f96"
+      url "https://github.com/gcstr/dockform/releases/download/v0.6.1/dockform_v0.6.1_darwin_amd64.tar.gz"
+      sha256 "462cc6525638c6ce0ff99f04e992f973b4c71309ce8cd53006484c73eb765c5a"
 
       def install
         bin.install "dockform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gcstr/dockform/releases/download/v0.6.0/dockform_v0.6.0_darwin_arm64.tar.gz"
-      sha256 "2e9abd2a510e46fe665f51edecb5c2329d6c75af9910282d03a412c29b8d19c4"
+      url "https://github.com/gcstr/dockform/releases/download/v0.6.1/dockform_v0.6.1_darwin_arm64.tar.gz"
+      sha256 "ebdc7ed81df02e2850f688d8cc643cbcd6ded28774b8f63e417020fbe2f817fd"
 
       def install
         bin.install "dockform"
@@ -29,15 +29,15 @@ class Dockform < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gcstr/dockform/releases/download/v0.6.0/dockform_v0.6.0_linux_amd64.tar.gz"
-      sha256 "aab284bacb73deaa4c2798cb4bb7ebd7d9b430f33141698e4341b905832425d6"
+      url "https://github.com/gcstr/dockform/releases/download/v0.6.1/dockform_v0.6.1_linux_amd64.tar.gz"
+      sha256 "1f6b5594c14e5e67bc9626dc30e9a83a16ca902a268dd607e6fb011e46006935"
       def install
         bin.install "dockform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gcstr/dockform/releases/download/v0.6.0/dockform_v0.6.0_linux_arm64.tar.gz"
-      sha256 "e26a28abe9c4b338afe7b6762e89d75a87979dd763f86c20d0dac0289f69c300"
+      url "https://github.com/gcstr/dockform/releases/download/v0.6.1/dockform_v0.6.1_linux_arm64.tar.gz"
+      sha256 "6b911f7bdc9e816a41314d64d65c9e00a039b25f3e8a3444cdcbd7cc5264e5fe"
       def install
         bin.install "dockform"
       end
