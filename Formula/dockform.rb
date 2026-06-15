@@ -5,21 +5,21 @@
 class Dockform < Formula
   desc "Manage Docker Compose projects declaratively"
   homepage "https://dockform.io"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gcstr/dockform/releases/download/v0.9.0/dockform_v0.9.0_darwin_amd64.tar.gz"
-      sha256 "354308ca986cca182f2450fc0186f493bb53c8fe0320cd0a45fa4ec9d890ffcb"
+      url "https://github.com/gcstr/dockform/releases/download/v0.9.1/dockform_v0.9.1_darwin_amd64.tar.gz"
+      sha256 "adb6b9548c62878da0e300b70ec4330db01884f2923ed38c08ef9f417a5ef18c"
 
       define_method(:install) do
         bin.install "dockform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gcstr/dockform/releases/download/v0.9.0/dockform_v0.9.0_darwin_arm64.tar.gz"
-      sha256 "a91d618d36ce427c54d206b71a1b982d5c991f5d7072f6b2b97d1a075e261bbb"
+      url "https://github.com/gcstr/dockform/releases/download/v0.9.1/dockform_v0.9.1_darwin_arm64.tar.gz"
+      sha256 "31b413ea99c5d0c4557adda35fe73d13e156ea5af5a442c3fedb6626f36e34a3"
 
       define_method(:install) do
         bin.install "dockform"
@@ -29,15 +29,15 @@ class Dockform < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gcstr/dockform/releases/download/v0.9.0/dockform_v0.9.0_linux_amd64.tar.gz"
-      sha256 "190ce74565485ebfc4ac3aaac1db4e119892bcb91033001eda752733db596d2c"
+      url "https://github.com/gcstr/dockform/releases/download/v0.9.1/dockform_v0.9.1_linux_amd64.tar.gz"
+      sha256 "e624387bba6d8d5e524d972cd7d29f310c2b2abe98e501870f69815a5ff41a24"
       define_method(:install) do
         bin.install "dockform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gcstr/dockform/releases/download/v0.9.0/dockform_v0.9.0_linux_arm64.tar.gz"
-      sha256 "c5d39738a3909c597f3668b54c645e7a047a95d24185416be8ad7dcaeb3f0301"
+      url "https://github.com/gcstr/dockform/releases/download/v0.9.1/dockform_v0.9.1_linux_arm64.tar.gz"
+      sha256 "a12747a6b6426134182c8882e8f9e8c551d5c278fb433181798a991f37a8bd9c"
       define_method(:install) do
         bin.install "dockform"
       end
